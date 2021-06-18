@@ -55,3 +55,13 @@ class IndexView(View):
         return render(request,"medicine/index.html",context)
 
 index   = IndexView.as_view()
+
+
+class SearchView(View):
+
+    def get(self, request, *args, **kwargs):
+        pass
+
+search  = SearchView.as_view()
+    
+
